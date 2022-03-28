@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
+<!DOCTYPE php>
 <head>
 <title>Store Website</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/php; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/menu.css" rel="stylesheet" type="text/css" media="all"/>
@@ -24,7 +24,7 @@
   <div class="wrap">
 		<div class="header_top">
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+				<a href="index.php"><img src="images/logo.png" alt="" /></a>
 			</div>
 			  <div class="header_top_right">
 			    <div class="search_box">
@@ -40,18 +40,18 @@
 							</a>
 						</div>
 			      </div>
-		   <div class="login"><a href="login.html">Login</a></div>
+		   <div class="login"><a href="login.php">Login</a></div>
 		 <div class="clear"></div>
 	 </div>
 	 <div class="clear"></div>
  </div>
 <div class="menu">
 	<ul id="dc_mega-menu-orange" class="dc_mm-orange">
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="products.html">Products</a> </li>
-	  <li><a href="topbrands.html">Top Brands</a></li>
-	  <li><a href="cart.html">Cart</a></li>
-	  <li><a href="contact.html">Contact</a> </li>
+	  <li><a href="index.php">Home</a></li>
+	  <li><a href="products.php">Products</a> </li>
+	  <li><a href="topbrands.php">Top Brands</a></li>
+	  <li><a href="cart.php">Cart</a></li>
+	  <li><a href="contact.php">Contact</a> </li>
 	  <div class="clear"></div>
 	</ul>
 </div>
@@ -60,44 +60,44 @@
 			<div class="section group">
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
-						 <a href="preview.html"> <img src="images/pic4.png" alt="" /></a>
+						 <a href="preview.php"> <img src="images/pic4.png" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h2>Iphone</h2>
 						<p>Lorem ipsum dolor sit amet sed do eiusmod.</p>
-						<div class="button"><span><a href="preview.html">Add to cart</a></span></div>
+						<div class="button"><span><a href="preview.php">Add to cart</a></span></div>
 				   </div>
 			   </div>			
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
-						  <a href="preview.html"><img src="images/pic3.png" alt="" / ></a>
+						  <a href="preview.php"><img src="images/pic3.png" alt="" / ></a>
 					</div>
 					<div class="text list_2_of_1">
 						  <h2>Samsung</h2>
 						  <p>Lorem ipsum dolor sit amet, sed do eiusmod.</p>
-						  <div class="button"><span><a href="preview.html">Add to cart</a></span></div>
+						  <div class="button"><span><a href="preview.php">Add to cart</a></span></div>
 					</div>
 				</div>
 			</div>
 			<div class="section group">
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
-						 <a href="preview.html"> <img src="images/pic3.jpg" alt="" /></a>
+						 <a href="preview.php"> <img src="images/pic3.jpg" alt="" /></a>
 					</div>
 				    <div class="text list_2_of_1">
 						<h2>Acer</h2>
 						<p>Lorem ipsum dolor sit amet, sed do eiusmod.</p>
-						<div class="button"><span><a href="preview.html">Add to cart</a></span></div>
+						<div class="button"><span><a href="preview.php">Add to cart</a></span></div>
 				   </div>
 			   </div>			
 				<div class="listview_1_of_2 images_1_of_2">
 					<div class="listimg listimg_2_of_1">
-						  <a href="preview.html"><img src="images/pic1.png" alt="" /></a>
+						  <a href="preview.php"><img src="images/pic1.png" alt="" /></a>
 					</div>
 					<div class="text list_2_of_1">
 						  <h2>Canon</h2>
 						  <p>Lorem ipsum dolor sit amet, sed do eiusmod.</p>
-						  <div class="button"><span><a href="preview.html">Add to cart</a></span></div>
+						  <div class="button"><span><a href="preview.php">Add to cart</a></span></div>
 					</div>
 				</div>
 			</div>
