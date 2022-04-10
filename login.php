@@ -1,3 +1,24 @@
+
+<?php
+   include '../classes/Adminlogin.php';
+
+?>
+
+<?php
+   $al =new Adminlogin();
+   if($_SERVER['REQUEST_METHOD']=='POST'){
+
+          $adminUser = $_POST['adminUser'];
+          $adminPass = md5($_POST['adminPass']);
+
+          $loginChk =$al->adminLogin($adminUser,$adminPass);
+
+   }
+
+
+?>
+
+
 <?php include "inc/header.php";?>
 
  <div class="main">
@@ -5,7 +26,7 @@
     	 <div class="login_panel">
         	<h3>Existing Customers</h3>
         	<p>Sign in with the form below.</p>
-        	<form action="hello" method="get" id="member">
+        	<form action="login.php" method="get" id="member">
                 	<input name="Domain" type="text" value="Username" class="field" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}">
                     <input name="Domain" type="password" value="Password" class="field" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
                  </form>

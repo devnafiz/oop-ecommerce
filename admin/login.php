@@ -27,6 +27,17 @@
 	<section id="content">
 		<form action="login.php" method="post">
 			<h1>Admin Login</h1>
+			<span style="color:red; font-size: 10px;">
+				<?php
+
+
+          if(isset($loginChk)){
+
+          	echo $loginChk;
+          }
+				?>
+
+			</span>
 			<div>
 				<input type="text" placeholder="Username" required="" name="adminUser"/>
 			</div>
