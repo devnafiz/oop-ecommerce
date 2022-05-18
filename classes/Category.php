@@ -50,6 +50,15 @@
           }
 
  	}
+
+
+    public function getAllCat(){
+         $query="SELECT * FROM tbl_category ORDER BY id DESC";
+
+         $result =$this->db->select($query);
+         return $result;
+
+    }
  }
 
 
