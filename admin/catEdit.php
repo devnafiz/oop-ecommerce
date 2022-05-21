@@ -24,7 +24,7 @@
   if($_SERVER['REQUEST_METHOD']=='POST'){
 
     $name =$_POST['name'];
-     $insertCat =$cat->catInsert($name);
+     $insertUpdate =$cat->catUpdate($name,$id);
   }
 
 
@@ -33,9 +33,9 @@
             <div class="box round first grid">
                 <h2>Update Category</h2>
                 <?php
-                       if(isset($insertCat)){
+                       if(isset($insertUpdate)){
 
-                        echo $insertCat;
+                        echo $insertUpdate;
                        }
                 ?>
 
@@ -54,7 +54,7 @@
 
                 ?>
                <div class="block copyblock"> 
-                 <form action="catEdit.php" method="POST">
+                 <form action="" method="POST">
                     <table class="form">					
                         <tr>
                             <td>
@@ -63,7 +63,7 @@
                         </tr>
 						<tr> 
                             <td>
-                                <input type="submit" name="submit" Value="Save" />
+                                <input type="submit" name="submit" Value="Update" />
                             </td>
                         </tr>
                     </table>

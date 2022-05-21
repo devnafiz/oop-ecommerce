@@ -69,6 +69,40 @@
          return $result;
 
     }
+
+    public function catUpdate($name,$id){
+
+           $name =$this->fm->validation($name);
+         
+          $name =mysqli_real_escape_string($this->db->link, $name);
+         $id =mysqli_real_escape_string($this->db->link, $id);
+
+          if(empty($name)){
+
+             $msg='Cat Name Must not empty';
+             return $msg;
+          }else{
+
+            $query ="UPDATE tbl_category 
+
+               SET 
+               name='$name'
+               WHERE id ='$id'
+            ";
+
+            $updated =$this->db->update($query);
+            if($updated){
+                $msg = 'Category Update Succefully';
+                return $msg;
+
+            }else{
+
+                  $msg = '<span class="error">Category not update</span> ';
+                return $msg;
+
+            }
+          }
+    }
  }
 
 
