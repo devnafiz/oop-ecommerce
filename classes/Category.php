@@ -103,6 +103,26 @@
             }
           }
     }
+
+
+
+    public function delCatById($id){
+
+        $query="DELETE FROM tbl_category WHERE id ='$id'";
+
+       // print_r( $query);die();
+
+        $delData = $this->db->delete($query);
+
+        if($delData){
+             $msg = 'Category  Succefully deleted';
+                return $msg;
+        }else{
+
+           $msg = 'Category  Succefully not deleted';
+                return $msg;
+        }
+    }
  }
 
 
