@@ -32,7 +32,7 @@
                  <li><a class="menuitem">Brand Option</a>
                     <ul class="submenu">
                         <li><a href="brandAdd.php">Add Brand</a> </li>
-                        <li><a href="catlist.php">Category List</a> </li>
+                        <li><a href="brandlist.php">Brand List</a> </li>
                     </ul>
                 </li>
                 <li><a class="menuitem">Product Option</a>

@@ -52,8 +52,8 @@
  	}
 
 
-    public function getAllCat(){
-         $query="SELECT * FROM tbl_category ORDER BY id DESC";
+    public function getAllBrand(){
+         $query="SELECT * FROM tbl_brand ORDER BY id DESC";
 
          $result =$this->db->select($query);
          return $result;
