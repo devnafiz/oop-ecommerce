@@ -61,16 +61,16 @@
     }
 
 
-    public function getCatById($id){
+    public function getBrandById($id){
 
-          $query="SELECT * FROM tbl_category WHERE id ='$id'";
+          $query="SELECT * FROM tbl_brand WHERE id ='$id'";
 
          $result =$this->db->select($query);
          return $result;
 
     }
 
-    public function catUpdate($name,$id){
+    public function BrandUpdate($name,$id){
 
            $name =$this->fm->validation($name);
          
@@ -83,7 +83,7 @@
              return $msg;
           }else{
 
-            $query ="UPDATE tbl_category 
+            $query ="UPDATE tbl_brand
 
                SET 
                name='$name'
@@ -92,12 +92,12 @@
 
             $updated =$this->db->update($query);
             if($updated){
-                $msg = 'Category Update Succefully';
+                $msg = 'Brand Update Succefully';
                 return $msg;
 
             }else{
 
-                  $msg = '<span class="error">Category not update</span> ';
+                  $msg = '<span class="error">Brand not update</span> ';
                 return $msg;
 
             }

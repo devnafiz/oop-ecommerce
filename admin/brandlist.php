@@ -49,7 +49,7 @@
 						<tr class="odd gradeX">
 							<td><?php echo $i;?></td>
 							<td><?php echo $result['name']; ?></td>
-							<td><a href="catEdit.php?catid=<?php echo $result['id'];?>">Edit</a> || <a href="?delCat=<?php echo $result['id'];?>" onclick="return confirm('Are you sure?')">Delete</a></td>
+							<td><a href="brandedit.php?brandid=<?php echo $result['id'];?>">Edit</a> || <a href="?delBrand=<?php echo $result['id'];?>" onclick="return confirm('Are you sure?')">Delete</a></td>
 						</tr>
 
 						<?php   }
